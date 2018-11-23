@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bus Pass Request Form</title>
+</head>
+<body>
+	
+		
+			<h1 align="center"      style="color:  Black;font-style:italic;font-weight: bold;">Bus Pass Request Form</h1>
+			<h4 align="center" style="font-style: italic; color: grey">capgemini@chennai, India.</h4>
+			<hr style="color: 3px solid black"><hr style="color: 3px black">
+			<div class="myimg">	
+	<img align = "right" alt="Shopping" src="../images/bus.jpg" width="900px"  height="400px">
+</div>
+			<div align="center"   style="border: 3px solid black; padding-bottom: 15px; width:500px; color: black">
+			<form name="reqform" action="../PassRequestServlet" method="post" onsubmit="return validatesemployee()">
+			<table >
+				<tr><tr> <td></td><td></td>  </tr>	
+					<th>Employee Id :</th>
+					<td><input id="frame" name="employee_id" type="text"></td>
+				</tr>
+				<tr>
+					<th>First Name  :</th>
+					<td><input id="frame" name="firstName" type="text"></td>
+				</tr>
+				<tr>
+					<th>Last Name :</th>
+					<td><input id="frame" name="lastName" type="text"></td>
+				</tr>
+				<tr>
+					<th>Email :</th>
+					<td><input id="frame" name="emailId" type="email"></td>
+				</tr>
+				<tr>
+					<th>Gender :</th>
+					<td><select name="gender">
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="Others">Others</option>
+					</select></td>
+				</tr>
+				<tr>
+				<th>Designation :</th>
+				<td>
+				<select name="Designation">
+				<option value  = "Software engineer">Software engineer</option>
+				<option value  = "Sr.Software Engineer">Sr.Software Engineer</option>
+				<option value  = "Associate Consultant">Associate Consultant</option>
+				<option value  = "Manager">Manager</option>
+				<option value  = "Sr.Manager">Sr.Manager</option>
+				<option value  = "Bla">Bla</option>
+				</select></td></tr>
+				<tr>
+					<th>Address :</th>
+					<td><textarea name="addr" Rows="2" cols="16"></textarea></td>
+				</tr>
+				<tr>
+					<th>Date of Joining :</th>
+					<td><input id="frame" name="dofjoining" type="date"></td>
+				</tr>
+				<tr>
+					<th>Location :</th>
+					<td><select name="location">
+							<option>Chennai Central to MIPL</option>
+							<option>Chennai Central to Sipcot</option>
+							<option>Chennai Central to pct</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>Pickup Location :</th>
+					<td><select name="pickupLocation">
+							<option>Chennai Central</option>
+							<option>MIPL</option>
+							<option>Sipcot</option>
+							<option>pct</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>Pickup Time :</th>
+					<td><input id="frame" name="pickupTime" type="time"></td>
+				</tr>
+				<tr>
+					<th>Drop Location :</th>
+					<td><select>
+							<option>Chennai Central</option>
+							<option>MIPL</option>
+							<option>Sipcot</option>
+							<option>pct</option>
+					</select></td>
+				</tr>
+				<tr>
+					<th>Drop Time :</th>
+					<td><input id="frame" type="time"></td>
+				</tr>
+				<tr>
+					<th></th>
+					
+					<td><input  id="frame" type="Submit" value="Submit Request" ></td>
+				</tr>
+
+			</table>
+</form>
+
+
+		</div>
+		<hr style="color: grey"><hr style="color: black">
+		<div id="footer">
+<div style="width:200px; float: left;color: grey;">Transportservice@Capgemini.in</div>
+<div style="margin-left:1280px;color: grey;">Capgemini Pvt.Ltd</div>
+</div>
+<hr style="color:  black">
+	
+</body>
+</html>
+ 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bus Pass Request Form</title>
+<link href="styles/mystyle.css" rel="stylesheet" >
+<script type="text/javascript" src="script/validation.js"></script>
+<title>Bus Pass Request Form</title>
+</head>
+<body>
+	<h1 align="center" style="lor:black;font-style: italic">Capgemini Bus Portal</h1>
+	<h4 align="center" style="font-style: italic; lor: grey">chennai,India.</h4>
+	<hr style="lor: 3px black"><hr style="lor: 3px black">
+	
+	<div>
+		
+		<img src="images/bus1.jpg" width="1430px" height="400px" id="myimage" />
+		<a href="pages/requestform.html"><hr style="lor: 3px black">
+		<p align="center" style="lor:red;font-style: italic">* Click here to request buspass *</p>
+		</a>
+		<hr style="lor: 3px black"><hr style="lor: 3px black">
+	</div>
+	<div>
+	<form action="LoginServlet" name="form1" method="post" onsubmit="return validate()">
+	<div id="form1">
+	<table align="right" >
+	<tr>
+		<th  colspan="3" align="center" lspan="3">Admin Login Form</th>
+	</tr>
+	<tr>
+		<td>Username</td>
+		<td><input type="text" name="userName"></td>
+		<td>
+				<div id="uerrormsg"></div>
+			</td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" name="userPwd"></td>
+		<td>
+				<div id="perrormsg"></div>
+			</td>
+	</tr>
+	<tr>
+	<td></td>
+	
+	<td><input colspan="3"  type="submit" value="Login" name="Login"></td><td></td>
+	</tr>
+	</table></div>
+	 <div style="lor: #FF0000;" name="err"></div>
+	 <hr style="lor: 3px black"><hr style="lor: 3px black">
+	 <hr style="lor: 3px black"><hr style="lor: 3px black"><hr style="lor: 3px black"><hr style="lor: 3px black"><hr style="lor: 3px black">
+	 <hr style="lor: 3px black"><hr style="lor: 3px black"><hr style="lor: 3px black">
+	 <hr style="lor: 3px black"><hr style="lor: 3px black">
+	 <div id="footer">
+<div style="width:200px; float: left;lor: grey;">Transportservice@Capgemini.in</div>
+<div style="margin-left:1280px;lor: grey;	">Capgemini Pvt.Ltd</div><hr style="lor: 3px black"><hr style="lor: 3px black">
+</div>
+	</form>
+	</div>
+	
+</body>
+</html>
